@@ -1,0 +1,23 @@
+[project]
+name = "imagfind"
+version = "0.1.0"
+description = "AI-powered semantic image search CLI using SigLIP and ChromaDB"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1.7",
+    "rich>=13.7.1",
+    "chromadb>=0.5.0",
+    "transformers>=4.41.0",
+    "torch>=2.2.0",
+    "pillow>=10.3.0",
+    "sentencepiece>=0.2.0",
+]
+
+[project.scripts]
+imagfind = "imagfind.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
