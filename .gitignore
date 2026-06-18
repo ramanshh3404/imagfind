@@ -17,3 +17,7 @@ build/
 *.csv
 
 uv.lock
+
+
+imagenette_1000/
+test_images/
